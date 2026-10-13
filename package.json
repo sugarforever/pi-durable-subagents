@@ -1,0 +1,51 @@
+{
+  "name": "pi-durable-subagents",
+  "version": "0.1.0",
+  "description": "Foreground and persistent background subagents for Pi Durable",
+  "keywords": [
+    "pi",
+    "pi-durable",
+    "subagent",
+    "ai-agent"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sugarforever/pi-durable-subagents.git"
+  },
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "tsx --test test/*.test.ts",
+    "example:foreground": "tsx examples/foreground.ts",
+    "example:background": "tsx examples/background.ts"
+  },
+  "peerDependencies": {
+    "@earendil-works/chord": "^1.2.0",
+    "@earendil-works/pi-ai": "^1.2.0",
+    "@earendil-works/pi-durable": "^1.2.0"
+  },
+  "devDependencies": {
+    "@earendil-works/chord": "1.2.0",
+    "@earendil-works/pi-ai": "1.2.0",
+    "@earendil-works/pi-durable": "1.2.0",
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
