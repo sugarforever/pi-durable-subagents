@@ -1,5 +1,5 @@
 {
-  "name": "pi-durable-subagents",
+  "name": "@sugarforever/pi-durable-subagents",
   "version": "0.1.0",
   "description": "Foreground and persistent background subagents for Pi Durable",
   "keywords": [
@@ -14,6 +14,9 @@
   },
   "type": "module",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=22.19.0"
   },
