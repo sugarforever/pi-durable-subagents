@@ -19,7 +19,7 @@ Pi Durable is an embedded TypeScript SDK. Install this package with npm and regi
 ## Install
 
 ```bash
-npm install pi-durable-subagents \
+npm install github:sugarforever/pi-durable-subagents \
   @earendil-works/pi-durable \
   @earendil-works/pi-ai \
   @earendil-works/chord
